@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+ /* For Nav-bar */
+.nav-ul li{
+    display: inline;
+    margin: 10px;
+    /* border: 1px solid; */
+    padding: 5px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    
+
+}
+.nav-ul li::before{
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 4px;
+    bottom: -1px;
+    border-radius: 20px;
+    left: 30%;
+    right: 40%;
+    background-color: #ffad51;
+    left: 50%;
+    right: 50%;
+    transition: 0.6s ease-out;
+
+}
+.nav-ul li:hover::before{
+
+    width: 100%;
+
+    left: 0%;
+    right: 0%;
+  
+   
+}
+.nav-ul li a:hover{
+    color: #da7400;
+}
+.nav-ul li a{
+    color: black;
+    font-weight: bold;
+}
+
+.logo h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    color: #ff951c;
+}

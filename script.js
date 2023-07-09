@@ -174,5 +174,22 @@ server();
 
 //  const 
 
+const display = document.getElementById("open");
+
+const smNav = document.getElementById('sm-nav');
+
+display . addEventListener('click' , (e) =>{
+    smNav.style.display="block";
+    smNav.style.transition = " 2.1s ease-in";
+
+    // transition: 0.5s ease-in-out;
+
+    console.log('adasd')
+})
+const close = document.getElementById("close");
+close . addEventListener('click',(e)=>{
+   
+    smNav.style.display="none";
 
 
+})

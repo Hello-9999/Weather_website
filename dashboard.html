@@ -45,7 +45,7 @@
         <div class="nav-ul float-end mx-5">
           <ul class="d-flex flex-row">
             <li><a href="index.html" class="text-decoration-none"> Home</a></li>
-            <li><a href="#" class="text-decoration-none"> Dashboard</a></li>
+            <li id="dashboard"><a href="#" class="text-decoration-none" style="color: #ff951c;" > Dashboard</a></li>
             <!-- <li> <a href="#"> HOme</a></li>
                 <li> <a href="#"> HOme</a></li> -->
           </ul>
@@ -55,26 +55,41 @@
 
     <div class="container-fluid  " id="weather-dashboard">
 
-        <div class="container wheather-detail text-info"  >
+        <div class="container wheather-detail text-info"  id="wheather-detail">
 
-            <div class="conrName"  style="margin-bottom: 5%;">
-                <h1 id="city"> kathmnadu  <span> ,</span><span id="country"> Nepal</span></h1>
+            <div class="container border border-2" id="error-msg" >
+
+                <h4 class="text-danger" style="font-size: 3rem;"> City not found !!</h4>
+
+              <img src="ufo_2834885.png" alt="">
+
+
+
             </div>
 
-            <div class="rainDetail">
+            <div class="conrName"  style="margin-bottom: 5%;">
+                <h1 >  <span id="city" class="text-capitalize">  </span>  <span> ,</span> <span id="country"> </span></h1>
+            </div>
+
+
+            <div class="rainDetail" id="rainDetail">
+        
 
                 
 
-                <h2  style="margin-bottom: 3%; font-size: 6rem;"> <span id="weathericon" class=""> <i class="fas fa-cloud-sun-rain"></i></span> <span id="temp"> 32</span> </h2>
+                <h2 style="margin-bottom: 3%; font-size: 6rem;">
+                    <span><img src="" alt="" id="weathericon" style="background-color: rgb(13 202 240 / 5%); border-radius: 50%;"></span>
+                    <span id="temp" ></span> <span>&deg;C</span>
+                </h2>
 
-                <p id="weat-main"  style="margin-bottom: 5%; font-size: 3rem;"> cloud</p>
+                <p id="weat-main"  style="margin-bottom: 5%; font-size: 3rem;"> </p>
 
-                <p id="weat-desc"  style="margin-bottom: 5%;font-size: 1rem;"> cloudly</p>
+                <p id="weat-desc"  style="margin-bottom: 5%;font-size: 1.5rem;"> </p>
 
-                <div class="container-sm d-flex justify-content-evenly m-auto" style="font-size: 2rem; padding: 0% 25%;">
-                    <p id="weat-feel">23</p>
-                    <p id="visibility"> 34</p>
-                    <p id="wind-speed"> fgd</p>
+                <div class="container-sm d-flex justify-content-evenly m-auto" style="font-size: 2rem; ">
+                    <p  > <span  style="font-size: 1.2rem; color: aliceblue ; text-transform: capitalize; font-weight: 500; letter-spacing: 1px;">fells like :</span> <span id="weat-feel" style="color: #ff951c; font-weight: 600;"> </span> <span style="font-size: 1.5rem ; font-weight: 600" id="deg"> &deg;</span></p>
+                    <p  > <span  style="font-size: 1.2rem; color: aliceblue ; text-transform: capitalize; font-weight: 500;letter-spacing: 1px; ">Visibility :</span> <span id="visibility" style="color: #ff951c; font-weight: 600;"> </span> <span style="font-size: 1.5rem; font-weight: 600">Km</span></p>
+                    <p  > <span  style="font-size: 1.2rem; color: aliceblue ; text-transform: capitalize; font-weight: 500;letter-spacing: 1px;"> Wind :</span> <span id="wind-speed" style="color: #ff951c; font-weight: 600;"> </span> <span style="font-size: 1.5rem; font-weight: 600;">m/s</span></p>
                 </div>
 
 

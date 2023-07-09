@@ -145,7 +145,7 @@ div#body-inp{
     /* background-image: linear-gradient( rgb(37 34 34),rgb(0 0 0 / 30%)),url(https://i.pinimg.com/originals/c8/ba/30/c8ba30ee61944cc26dbde4022a0a4b72.gif); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 10px;
 
 }
@@ -157,6 +157,7 @@ div#body-inp{
     padding: 30px;
     /* border: 1px solid; */
     border-radius: 20px;
+    margin-bottom: 5%;
     background-color: rgb(0 0 0 / 25%);
 
 }
@@ -184,4 +185,372 @@ div#body-inp{
 }
 #error-msg{
     display: none ;
+}
+#sm-nav{
+    transition: 0.5s ease-in-out;
+    background-color: #383434;
+    position: absolute;
+    right: -10%;
+    background-color: #383434;
+    height: 50vh;
+    top: 0;
+    display: none;
+    
+  
+}
+#sm-nav ul{
+    display: none;
+    display: flex;
+    flex-direction: column !important;
+    
+    margin-top: 30%;
+   
+}
+#open{
+    font-size: 30px;
+    
+}
+
+footer{
+    background: linear-gradient( rgb(47 46 46),rgb(0 0 0 / 77%));
+}
+
+
+/*  Responsive   */
+
+@media screen  and (max-width: 425px){
+    #lg-nav{
+        display: none;
+    }
+    div#open{
+        display: block !important;
+    }
+    .body-title-1{
+        padding: 0%;
+        font-size: 1.5rem;
+        margin-top: 10%;
+    }
+    .body-title-2{
+        padding: 0%;
+        font-size: 2.5rem;
+    }
+    .body-title-3{
+        margin-top: 10%;
+        padding: 0%;
+        font-size: 1rem;
+    }
+    div#body-inp{
+        width: 100%;
+        margin-top: 10% !important;
+        padding-bottom: 10% !important;
+    }
+    #weather-dashboard{
+        height: auto;
+    }
+    .container.wheather-detail {
+        width: 90%;
+    }
+    .rainDetail h2{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    #temp{
+        margin-top: 10%;
+        font-size: 3rem;
+    }
+    #temp span{
+        font-size: 2rem;
+    } 
+    .deg span{
+        font-size: 2rem;
+        /* display: flex !important; */
+ 
+    }
+    span #deg{
+        font-size: 1rem !important;
+    }
+    #weat-main{
+        font-size: 2rem;
+    }
+    #fell{
+        flex-direction: column;
+        margin-top: 20% !important;
+    }
+    
+}
+@media (min-width:425px)  and (max-width:575px ){
+    
+    .body-title-1{
+        padding: 0%;
+        font-size: 1.5rem;
+    }
+    .body-title-2{
+        padding: 0%;
+        font-size: 3rem;
+    }
+    .body-title-3{
+        margin-top: 10%;
+        padding: 0%;
+        font-size: 1.2rem;
+    }
+    div#body-inp{
+        width: 100%;
+        margin-top: 10% !important;
+        padding-bottom: 10% !important;
+    }
+    #lg-nav{
+        display: none;
+    }
+    div#open{
+        display: block !important;
+    }
+    #weather-dashboard{
+        height: auto;
+    }
+    .container.wheather-detail {
+        width: 80%;
+    }
+    .rainDetail h2{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    #temp{
+        margin-top: 10%;
+        font-size: 3rem;
+    }
+    #temp span{
+        font-size: 2rem;
+    } 
+    .deg span{
+        font-size: 2rem;
+        /* display: flex !important; */
+ 
+    }
+    span #deg{
+        font-size: 1rem !important;
+    }
+    #weat-main{
+        font-size: 2rem;
+    }
+    #fell{
+        flex-direction: column;
+        margin-top: 20% !important;
+    }
+   
+
+}
+
+@media (min-width:575px) and (max-width:767px) {
+
+    .body-title-1{
+        padding: 0% 5%;
+        font-size: 1.5rem;
+    }
+    .body-title-2{
+        padding: 0% 5%;
+        font-size: 3rem;
+    }
+    .body-title-3{
+        margin-top: 10%;
+        padding: 0% 5%;
+        font-size: 1.2rem;
+    }
+    div#body-inp{
+        width: 100%;
+        margin-top: 10% !important;
+        padding-bottom: 10% !important;
+    }
+  
+    #weather-dashboard{
+        height: auto;
+    }
+    .container.wheather-detail {
+        width: 80%;
+    }
+    .rainDetail h2{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    #temp{
+        margin-top: 10%;
+        font-size: 3rem;
+    }
+    #temp span{
+        font-size: 2rem;
+    } 
+    .deg span{
+        font-size: 2rem;
+        /* display: flex !important; */
+ 
+    }
+    span #deg{
+        font-size: 1rem !important;
+    }
+    #weat-main{
+        font-size: 2rem;
+    }
+    #fell{
+        flex-direction: column;
+        margin-top: 20% !important;
+    }
+   
+
+    
+}
+
+@media (min-width:767px) and (max-width: 991px) {
+
+    .body-title-1{
+        padding: 0% 0%;
+        font-size: 2rem;
+    }
+    .body-title-2{
+        padding: 0% 0%;
+        font-size: 3rem;
+    }
+    .body-title-3{
+        margin-top: 10%;
+        padding: 0% 0%;
+        font-size: 1.5rem;
+    }
+    div#body-inp{
+        width: 100%;
+        margin-top: 10% !important;
+        padding-bottom: 10% !important;
+    }
+    #sm-nav{
+        display: none;
+    }
+    #weather-dashboard{
+        height: auto;
+    }
+    .container.wheather-detail {
+        width: 80%;
+    }
+    .rainDetail h2{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    #temp{
+        margin-top: 10%;
+        font-size: 3rem;
+    }
+    #temp span{
+        font-size: 2rem;
+    } 
+    .deg span{
+        font-size: 2rem;
+        /* display: flex !important; */
+ 
+    }
+    span #deg{
+        font-size: 1rem !important;
+    }
+    #weat-main{
+        font-size: 2rem;
+    }
+    #fell{
+        flex-direction: column;
+        margin-top: 20% !important;
+    }
+   
+
+
+    
+}
+
+@media (min-width:991px) and (max-width :1154px) {
+    
+    .body-title-1{
+        padding: 0% 5%;
+        font-size: 2rem;
+    }
+    .body-title-2{
+        padding: 0% 5%;
+        font-size: 4rem;
+    }
+    .body-title-3{
+        margin-top: 3%;
+        padding: 0% 5%;
+        font-size: 1.5rem;
+    }
+    div#body-inp{
+        width: 100%;
+        margin-top: 10% !important;
+        padding-bottom: 5% !important;
+    }
+    #weather-dashboard{
+        height: max-content;
+        
+    }
+    #fell p span:nth-child(1){
+        width: auto;
+
+    }
+    .container.wheather-detail {
+        width: 65%;
+    }
+
+
+}
+@media (min-width:1154px) and (max-width:1199px) {
+
+     
+    .body-title-1{
+        padding: 0% 5%;
+        font-size: 2rem;
+    }
+    .body-title-2{
+        padding: 0% 5%;
+        font-size: 4rem;
+    }
+    .body-title-3{
+        margin-top: 3%;
+        padding: 0% 5%;
+        font-size: 1.5rem;
+    }
+    div#body-inp{
+        width: 100%;
+        margin-top: 10% !important;
+        padding-bottom: 5% !important;
+    }
+    #weather-dashboard{
+        height: max-content;
+    }
+    .container.wheather-detail {
+        width: 75%;
+    }
+    
+}
+@media (min-width:1199px)  and (max-width:1399px){
+
+    .body-title-1{
+        padding: 0% 5%;
+        font-size: 2rem;
+    }
+    .body-title-2{
+        padding: 0% 5%;
+        font-size: 4rem;
+    }
+    .body-title-3{
+        margin-top: 3%;
+        padding: 0% 5%;
+        font-size: 1.5rem;
+    }
+    div#body-inp{
+        width: 100%;
+        margin-top: 10% !important;
+        /* padding-bottom: 5% !important; */
+    }
+    #weather-dashboard{
+        height: max-content;
+    }
+    .container.wheather-detail {
+        width: 75%;
+    }
+    
 }

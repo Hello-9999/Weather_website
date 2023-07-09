@@ -100,6 +100,14 @@
 div#body-inp{
     width: 75%;
     margin: auto;
+    
+}
+#body-inp button{
+
+    border: none;
+}
+#body-inp .form-control{
+    line-height: 2.6;
 }
 .title div{
     margin: auto !important;
@@ -109,12 +117,27 @@ div#body-inp{
     font-family: 'Poppins', sans-serif;
 }
 #body-content{
-    background-image: linear-gradient( rgb(37 34 34),rgb(0 0 0 / 30%)),url('https://images.unsplash.com/photo-1682687220499-d9c06b872eee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: linear-gradient( rgb(37 34 34),rgb(0 0 0 / 30%)),url(photo-1682687220499-d9c06b872eee.avif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: c;
 
-  
 
+
+}
+
+#weather-dashboard{
+    background-image: linear-gradient( rgb(37 34 34),rgb(0 0 0 / 30%)),url(photo-1682687220499-d9c06b872eee.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    padding: 10px;
+
+}
+.container.wheather-detail{
+    
+    margin-top: 10%;
+    width: 55%;
+    text-align: center;
 
 }

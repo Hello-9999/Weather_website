@@ -21,7 +21,6 @@ const server = async () => {
     return dataDetail(data);
 
 
-    // console.log(data)
 }
 
 
@@ -32,40 +31,23 @@ const dataDetail = (data) => {
 
     if (!data.weather || data.weather.length === 0) {
         console.log("Weather data not available");
+
         const error = document.getElementById("error-msg");
-            error.style.display = "block";
-            const none = document.getElementById("rainDetail");
+        error.style.display = "block";
+
+        const none = document.getElementById("rainDetail");
         none.style.display = "none"
 
         return;
-      }
+    }
 
-      console.log(data.weather)
+
+
+
+
 
     
-
-    // if(data.code === "404"){
-    //     console.log("city not found")
-
-    console.log(data)
-    // }
-    
-
-
-    // if ( c) {
-
-    //    alert(" City not found ", `${window.location.href ="index.html"}`)
-    // }
-    // else{
-    //     
-
-    //     const error = document.getElementById("error-msg");
-    //     error.style.display = "none";
-        
-
-    // }
-
-
+  
 
     const country = document.getElementById('country');
     const temp = document.getElementById('temp');
@@ -79,13 +61,11 @@ const dataDetail = (data) => {
     const dashboard = document.getElementById("weather-dashboard");
 
     const weathIcon = data.weather[0].icon;
-    // console.log(weathIcon)
-
+  
 
     const iconLink = `https://openweathermap.org/img/wn/${weathIcon}@2x.png`
 
-    // console.log(data.weather[0].icon)
-    // console.log(data.name)
+  
 
     country.innerText = data.sys.country;
     temp.innerText = data.main.temp;
@@ -94,11 +74,11 @@ const dataDetail = (data) => {
     speed.innerText = data.wind.speed;
     feel.innerText = data.main.feels_like;
     vis.innerText = data.visibility;
-    // icon.innerText = iconLink;
-    icon.src="https://openweathermap.org/img/wn/${data.weather[0].icon}"
+ 
+    icon.src = "https://openweathermap.org/img/wn/${data.weather[0].icon}"
 
     icon.src = iconLink
-    // console.log(data.weather)
+    
 
     if (data.weather[0].main === "Mist") {
 
@@ -163,7 +143,6 @@ const dataDetail = (data) => {
     }
 
 
-    // 
 
 
 
@@ -172,24 +151,24 @@ const dataDetail = (data) => {
 
 server();
 
-//  const 
+
 
 const display = document.getElementById("open");
 
 const smNav = document.getElementById('sm-nav');
 
-display . addEventListener('click' , (e) =>{
-    smNav.style.display="block";
+display.addEventListener('click', (e) => {
+    smNav.style.display = "block";
     smNav.style.transition = " 2.1s ease-in";
 
-    // transition: 0.5s ease-in-out;
+    
 
     console.log('adasd')
 })
 const close = document.getElementById("close");
-close . addEventListener('click',(e)=>{
-   
-    smNav.style.display="none";
+close.addEventListener('click', (e) => {
+
+    smNav.style.display = "none";
 
 
 })

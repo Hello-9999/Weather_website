@@ -1,123 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hom</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-
-<body>
-  <!-- For Nav bar -->
-
-  <div class="container-fluid" id="nav-bar" style="background-color: #252222">
-    <div class="container p-1" style=" align-items: center ; position: relative;">
-      <div class="logo float-start mt-2">
-        <h1 class="">Logo</h1>
-      </div>
-
-      <!-- <div class="nav-ul float-end mx-5">
-        <ul class="d-flex flex-row">
-          <li><a href="#" class="text-decoration-none"> Home</a></li>
-          <li><a href="dashboard.html" class="text-decoration-none"> Dashboard</a></li>
-          <li> <a href="#"> HOme</a></li>
-                <li> <a href="#"> HOme</a></li>
-        </ul>
-      </div> -->
-    </div>
-  </div>
-
-  <div class="body-cont container-fluid bg-info " style="height: 100vh;" id="body-content">
-    <div class="container  ">
-      <div class="title m-auto">
-        <div>
-          <p class=" body-title-1"><span>-</span> Wheather and Forecast</p>
-
-          <h3 class="body-title-2">daily wheather forecast <div class="div">update news</div>
-          </h3>
-
-          <p class="body-title-3">
-            Get the latest weather forecast for today with up-to-date
-            information on temperature, precipitation, and more.
-          </p>
+  <body>
+    <div class="container-fluid" id="nav-bar" style="background-color: #252222">
+      <div
+        class="container p-1"
+        style="align-items: center; position: relative"
+      >
+        <div class="logo float-start mt-2">
+          <h1 class="">
+            <i class="fa-solid fa-cloud-bolt"></i>
+            <span id="weather-logo">weather</span><span id="hub">Hub</span>
+          </h1>
         </div>
-
-        <div id="body-inp" class=" mt-2 input-group">
-          <input type="text" class="form-control" placeholder="Enter your cities name " id="place-name" required>
-          <!-- <label for="place-name" class="form-label">Enter your location</label> -->
-          <!-- <label for="place-name " >Enter your location</label> -->
-
-          <button class="btn  btn-info " id="search" type="submit"> Search </button>
-
-
-        </div>
-
       </div>
     </div>
-  </div>
+
+    <div
+      class="body-cont container-fluid bg-info"
+      style="height: 100vh"
+      id="body-content"
+    >
+      <div class="container">
+        <div class="title m-auto">
+          <div>
+            <p class="body-title-1"><span>-</span> Wheather and Forecast</p>
+
+            <h3 class="body-title-2">
+              daily wheather forecast
+              <div class="div">update news</div>
+            </h3>
+
+            <p class="body-title-3">
+              Get the latest weather forecast for today with up-to-date
+              information on temperature, precipitation, and more.
+            </p>
+          </div>
+
+          <div id="body-inp" class="mt-2 input-group">
+            <input
+              type="text"
+              class="form-control"
+              autocomplete="off"
+              placeholder="Enter your cities name "
+              id="place-name"
+              required
+            />
+
+            <button class="btn btn-info" id="search" type="submit">
+              Click here
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const search = document.getElementById("search");
+
+      search.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const nameInput = document.getElementById("place-name").value;
+
+        if (nameInput === "") {
+          alert("Enter your City Name !!");
+        } else {
+          window.location.href = "dashboard.html";
+        }
+
+        localStorage.setItem("city", nameInput);
+      });
+    </script>
 
 
 
-
-  <script>
-
-    const search = document.getElementById('search');
-
-    search.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      
-      const nameInput = document.getElementById('place-name').value;
-
-      if(nameInput === "" ){
-
-        alert('Enter your City Name !!')
-          
-      }else{
-
-        window.location.href = 'dashboard.html';
-      }
-
- 
-
-
-
-      
-      localStorage.setItem( 'city' , nameInput)
-
-
-   
-    });
-    
-
-
-
-
-  </script>
-
-  <!-- <script src="script.js"></script> -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

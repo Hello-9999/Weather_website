@@ -1,24 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
 }
 
- /* For Nav-bar */
-.nav-ul li{
+#weather-logo {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+#hub {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-ul li {
     display: inline;
     margin: 10px;
-    /* border: 1px solid; */
+
     padding: 5px;
     font-size: 1.2rem;
     letter-spacing: 1px;
-
     font-family: 'Poppins', sans-serif;
+
     position: relative;
-    
+
 
 }
-.nav-ul li::before{
+
+.nav-ul li::before {
     position: absolute;
     content: " ";
     width: 0%;
@@ -33,18 +45,20 @@
     transition: 0.6s ease-out;
 
 }
-.nav-ul li:hover::before{
+
+.nav-ul li:hover::before {
 
     width: 100%;
 
     left: 0%;
     right: 0%;
-  
-   
+
+
 }
-#dashboard ul li{
+
+#dashboard ul li {
     position: absolute !important;
-    content: " " ;
+    content: " ";
     width: 0% !important;
     height: 4px;
     bottom: -1px;
@@ -56,22 +70,25 @@
     right: 50%;
 
 }
-.nav-ul li a:hover{
+
+.nav-ul li a:hover {
     color: #da7400;
 }
-.nav-ul li a{
+
+.nav-ul li a {
     color: aliceblue;
     font-weight: bold;
 }
 
-.logo h1{
+.logo h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     letter-spacing: 4px;
 
     color: #ff951c;
 }
-#nav-bar{
+
+#nav-bar {
     position: sticky;
     top: 0;
 }
@@ -79,12 +96,14 @@
 
 #body-inp span {
     cursor: pointer;
-    
+
 }
-.title{
+
+.title {
     padding-top: 10%;
 }
-.body-title-1{
+
+.body-title-1 {
 
     color: #ffad51;
     font-family: 'Poppins', sans-serif;
@@ -92,46 +111,54 @@
     padding: 0% 20%;
 }
 
-.body-title-2{
-    /* margin-top: 5%; */
+.body-title-2 {
+
     font-size: 4rem;
     text-transform: capitalize;
-    color:azure;
+    color: azure;
     padding: 0% 20%;
-    /* width: 80%; */
+
 }
-.body-title-3{
-    margin-top: 3% ;
+
+.body-title-3 {
+    margin-top: 3%;
     font-size: 1.5rem;
-    /* width: 80%; */
+
     color: aliceblue;
     padding: 0% 20%;
     margin-bottom: 5%;
 }
-.body-inp{
+
+.body-inp {
     width: 80%;
 }
-div#body-inp{
+
+div#body-inp {
     width: 75%;
     margin: auto;
-    
+
 }
-#body-inp button{
+
+#body-inp button {
 
     border: none;
 }
-#body-inp .form-control{
+
+#body-inp .form-control {
     line-height: 2.6;
 }
-.title div{
+
+.title div {
     margin: auto !important;
 }
-.form-floating>label{
+
+.form-floating>label {
 
     font-family: 'Poppins', sans-serif;
 }
-#body-content{
-    background-image: linear-gradient( rgb(37 34 34),rgb(0 0 0 / 30%)),url(photo-1682687220499-d9c06b872eee.avif);
+
+#body-content {
+    background-image: linear-gradient(rgb(37 34 34), rgb(0 0 0 / 30%)), url(photo-1682687220499-d9c06b872eee.avif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: c;
@@ -140,53 +167,60 @@ div#body-inp{
 
 }
 
-#weather-dashboard{
-    /* background-image: linear-gradient( rgb(37 34 34),rgb(0 0 0 / 30%)),url(photo-1682687220499-d9c06b872eee.avif); */
-    /* background-image: linear-gradient( rgb(37 34 34),rgb(0 0 0 / 30%)),url(https://i.pinimg.com/originals/c8/ba/30/c8ba30ee61944cc26dbde4022a0a4b72.gif); */
+#weather-dashboard {
+
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    /* height: 100vh; */
+
     padding: 10px;
 
 }
-.container.wheather-detail{
-    
+
+.container.wheather-detail {
+
     margin-top: 10%;
     width: 55%;
     text-align: center;
     padding: 30px;
-    /* border: 1px solid; */
+
     border-radius: 20px;
     margin-bottom: 5%;
     background-color: rgb(0 0 0 / 25%);
 
 }
-.conrName h1{
+
+.conrName h1 {
     font-family: 'Poppins', sans-serif;
-    color:  #FFFFFF;
+    color: #FFFFFF;
 }
-#weat-desc{
+
+#weat-desc {
     display: none;
 }
-#country{
+
+#country {
     font-weight: bold;
     letter-spacing: 4px;
 }
-#weat-main{
+
+#weat-main {
     color: #ff951c;
     font-weight: bold;
     letter-spacing: 3px;
 }
-#error-msg img{
+
+#error-msg img {
     margin-top: 5%;
     width: 50%;
-    
+
 
 }
-#error-msg{
-    display: none ;
+
+#error-msg {
+    display: none;
 }
-#sm-nav{
+
+#sm-nav {
     transition: 0.5s ease-in-out;
     background-color: #383434;
     position: absolute;
@@ -195,362 +229,481 @@ div#body-inp{
     height: 50vh;
     top: 0;
     display: none;
-    
-  
+
+
 }
-#sm-nav ul{
+
+#sm-nav ul {
     display: none;
     display: flex;
     flex-direction: column !important;
-    
+
     margin-top: 30%;
-   
-}
-#open{
-    font-size: 30px;
-    
+
 }
 
-footer{
-    background: linear-gradient( rgb(47 46 46),rgb(0 0 0 / 77%));
+#open {
+    font-size: 30px;
+
+}
+
+footer {
+    background: linear-gradient(rgb(47 46 46), rgb(0 0 0 / 77%));
 }
 
 
 /*  Responsive   */
 
-@media screen  and (max-width: 425px){
-    #lg-nav{
+@media screen and (max-width: 425px) {
+    .title {
+        padding-top: 30%;
+    }
+
+    #weather-logo {
+        font-size: 1.3rem;
+    }
+
+    #hub {
+        font-size: 1.7rem;
+    }
+
+    .logo h1 i {
+        font-size: 2rem;
+    }
+
+    #lg-nav {
         display: none;
     }
-    div#open{
+
+    div#open {
         display: block !important;
     }
-    .body-title-1{
+
+    .body-title-1 {
         padding: 0%;
         font-size: 1.5rem;
         margin-top: 10%;
     }
-    .body-title-2{
+
+    .body-title-2 {
         padding: 0%;
         font-size: 2.5rem;
     }
-    .body-title-3{
+
+    .body-title-3 {
         margin-top: 10%;
         padding: 0%;
         font-size: 1rem;
     }
-    div#body-inp{
+
+    div#body-inp {
         width: 100%;
         margin-top: 10% !important;
         padding-bottom: 10% !important;
     }
-    #weather-dashboard{
+
+    #weather-dashboard {
         height: auto;
     }
+
     .container.wheather-detail {
         width: 90%;
     }
-    .rainDetail h2{
+
+    .rainDetail h2 {
         margin-top: 10%;
         display: flex;
         flex-direction: column;
     }
-    #temp{
+
+    #temp {
         margin-top: 10%;
         font-size: 3rem;
     }
-    #temp span{
+
+    #temp span {
         font-size: 2rem;
-    } 
-    .deg span{
-        font-size: 2rem;
-        /* display: flex !important; */
- 
     }
-    span #deg{
+
+    .deg span {
+        font-size: 2rem;
+
+    }
+
+    span #deg {
         font-size: 1rem !important;
     }
-    #weat-main{
+
+    #weat-main {
         font-size: 2rem;
     }
-    #fell{
+
+    #fell {
         flex-direction: column;
         margin-top: 20% !important;
     }
-    
+
 }
-@media (min-width:425px)  and (max-width:575px ){
-    
-    .body-title-1{
+
+@media (min-width:425px) and (max-width:575px) {
+
+    .title {
+        padding-top: 30%;
+    }
+
+    #weather-logo {
+        font-size: 1.3rem;
+    }
+
+    #hub {
+        font-size: 1.7rem;
+    }
+
+    .body-title-1 {
         padding: 0%;
         font-size: 1.5rem;
     }
-    .body-title-2{
+
+    .body-title-2 {
         padding: 0%;
         font-size: 3rem;
     }
-    .body-title-3{
+
+    .body-title-3 {
         margin-top: 10%;
         padding: 0%;
         font-size: 1.2rem;
     }
-    div#body-inp{
+
+    div#body-inp {
         width: 100%;
         margin-top: 10% !important;
         padding-bottom: 10% !important;
     }
-    #lg-nav{
+
+    #lg-nav {
         display: none;
     }
-    div#open{
+
+    div#open {
         display: block !important;
     }
-    #weather-dashboard{
+
+    #weather-dashboard {
         height: auto;
     }
+
     .container.wheather-detail {
         width: 80%;
     }
-    .rainDetail h2{
+
+    .rainDetail h2 {
         margin-top: 10%;
         display: flex;
         flex-direction: column;
     }
-    #temp{
+
+    #temp {
         margin-top: 10%;
         font-size: 3rem;
     }
-    #temp span{
+
+    #temp span {
         font-size: 2rem;
-    } 
-    .deg span{
-        font-size: 2rem;
-        /* display: flex !important; */
- 
     }
-    span #deg{
+
+    .deg span {
+        font-size: 2rem;
+
+
+    }
+
+    span #deg {
         font-size: 1rem !important;
     }
-    #weat-main{
+
+    #weat-main {
         font-size: 2rem;
     }
-    #fell{
+
+    #fell {
         flex-direction: column;
         margin-top: 20% !important;
     }
-   
+
 
 }
 
 @media (min-width:575px) and (max-width:767px) {
 
-    .body-title-1{
+    .title {
+        padding-top: 30%;
+    }
+
+    #hub {
+        font-size: 1.7rem;
+    }
+
+    .body-title-1 {
         padding: 0% 5%;
         font-size: 1.5rem;
     }
-    .body-title-2{
+
+    .body-title-2 {
         padding: 0% 5%;
         font-size: 3rem;
     }
-    .body-title-3{
+
+    .body-title-3 {
         margin-top: 10%;
         padding: 0% 5%;
         font-size: 1.2rem;
     }
-    div#body-inp{
+
+    div#body-inp {
         width: 100%;
         margin-top: 10% !important;
         padding-bottom: 10% !important;
     }
-  
-    #weather-dashboard{
+
+    #weather-dashboard {
         height: auto;
     }
+
     .container.wheather-detail {
         width: 80%;
     }
-    .rainDetail h2{
+
+    .rainDetail h2 {
         margin-top: 10%;
         display: flex;
         flex-direction: column;
     }
-    #temp{
+
+    #temp {
         margin-top: 10%;
         font-size: 3rem;
     }
-    #temp span{
+
+    #temp span {
         font-size: 2rem;
-    } 
-    .deg span{
-        font-size: 2rem;
-        /* display: flex !important; */
- 
     }
-    span #deg{
+
+    .deg span {
+        font-size: 2rem;
+
+
+    }
+
+    span #deg {
         font-size: 1rem !important;
     }
-    #weat-main{
+
+    #weat-main {
         font-size: 2rem;
     }
-    #fell{
+
+    #fell {
         flex-direction: column;
         margin-top: 20% !important;
     }
-   
 
-    
+
+
 }
 
 @media (min-width:767px) and (max-width: 991px) {
+    .title {
+        padding-top: 20%;
+    }
 
-    .body-title-1{
+
+    #hub {
+        font-size: 1.7rem;
+    }
+
+    .body-title-1 {
         padding: 0% 0%;
         font-size: 2rem;
     }
-    .body-title-2{
+
+    .body-title-2 {
         padding: 0% 0%;
         font-size: 3rem;
     }
-    .body-title-3{
+
+    .body-title-3 {
         margin-top: 10%;
         padding: 0% 0%;
         font-size: 1.5rem;
     }
-    div#body-inp{
+
+    div#body-inp {
         width: 100%;
         margin-top: 10% !important;
         padding-bottom: 10% !important;
     }
-    #sm-nav{
+
+    #sm-nav {
         display: none;
     }
-    #weather-dashboard{
+
+    #weather-dashboard {
         height: auto;
     }
+
     .container.wheather-detail {
         width: 80%;
     }
-    .rainDetail h2{
+
+    .rainDetail h2 {
         margin-top: 10%;
         display: flex;
         flex-direction: column;
     }
-    #temp{
+
+    #temp {
         margin-top: 10%;
         font-size: 3rem;
     }
-    #temp span{
+
+    #temp span {
         font-size: 2rem;
-    } 
-    .deg span{
-        font-size: 2rem;
-        /* display: flex !important; */
- 
     }
-    span #deg{
+
+    .deg span {
+        font-size: 2rem;
+
+
+    }
+
+    span #deg {
         font-size: 1rem !important;
     }
-    #weat-main{
+
+    #weat-main {
         font-size: 2rem;
     }
-    #fell{
+
+    #fell {
         flex-direction: column;
         margin-top: 20% !important;
     }
-   
 
 
-    
+
+
 }
 
 @media (min-width:991px) and (max-width :1154px) {
-    
-    .body-title-1{
+    .title {
+        padding-top: 15%;
+    }
+
+    .body-title-1 {
         padding: 0% 5%;
         font-size: 2rem;
     }
-    .body-title-2{
+
+    .body-title-2 {
         padding: 0% 5%;
         font-size: 4rem;
     }
-    .body-title-3{
+
+    .body-title-3 {
         margin-top: 3%;
         padding: 0% 5%;
         font-size: 1.5rem;
     }
-    div#body-inp{
+
+    div#body-inp {
         width: 100%;
         margin-top: 10% !important;
         padding-bottom: 5% !important;
     }
-    #weather-dashboard{
+
+    #weather-dashboard {
         height: max-content;
-        
+
     }
-    #fell p span:nth-child(1){
+
+    #fell p span:nth-child(1) {
         width: auto;
 
     }
+
     .container.wheather-detail {
         width: 65%;
     }
 
 
 }
+
 @media (min-width:1154px) and (max-width:1199px) {
 
-     
-    .body-title-1{
+
+    .body-title-1 {
         padding: 0% 5%;
         font-size: 2rem;
     }
-    .body-title-2{
+
+    .body-title-2 {
         padding: 0% 5%;
         font-size: 4rem;
     }
-    .body-title-3{
+
+    .body-title-3 {
         margin-top: 3%;
         padding: 0% 5%;
         font-size: 1.5rem;
     }
-    div#body-inp{
+
+    div#body-inp {
         width: 100%;
         margin-top: 10% !important;
         padding-bottom: 5% !important;
     }
-    #weather-dashboard{
+
+    #weather-dashboard {
         height: max-content;
     }
+
     .container.wheather-detail {
         width: 75%;
     }
-    
-}
-@media (min-width:1199px)  and (max-width:1399px){
 
-    .body-title-1{
+}
+
+@media (min-width:1199px) and (max-width:1399px) {
+
+    .body-title-1 {
         padding: 0% 5%;
         font-size: 2rem;
     }
-    .body-title-2{
+
+    .body-title-2 {
         padding: 0% 5%;
         font-size: 4rem;
     }
-    .body-title-3{
+
+    .body-title-3 {
         margin-top: 3%;
         padding: 0% 5%;
         font-size: 1.5rem;
     }
-    div#body-inp{
+
+    div#body-inp {
         width: 100%;
         margin-top: 10% !important;
-        /* padding-bottom: 5% !important; */
+
     }
-    #weather-dashboard{
+
+    #weather-dashboard {
         height: max-content;
     }
+
     .container.wheather-detail {
         width: 75%;
     }
-    
+
 }
